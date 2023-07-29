@@ -3,10 +3,15 @@ import art from './art.png'
 import './App.css';
 import { Image, Text, View, StyleSheet, Dimensions } from 'react-native';
 import { BrowserView, MobileView } from 'react-device-detect';
+import { useEffect } from 'react';
 
 function App() {
   //made this in an hour... probably tons of bugs.
   //1REM = 16?
+  useEffect(() => {
+    document.title = "[un.]"
+  }, [])
+
   return (
     <>
       <BrowserView>
